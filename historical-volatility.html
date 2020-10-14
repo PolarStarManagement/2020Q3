@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 4 Historical Volatility | Commodities in Review 2020 Q3 - A Quant’s Perspective</title>
+  <meta name="description" content="This is a collection of observations over the third quarter of 2020 in the general commodity universe." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 4 Historical Volatility | Commodities in Review 2020 Q3 - A Quant’s Perspective" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a collection of observations over the third quarter of 2020 in the general commodity universe." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 4 Historical Volatility | Commodities in Review 2020 Q3 - A Quant’s Perspective" />
+  
+  <meta name="twitter:description" content="This is a collection of observations over the third quarter of 2020 in the general commodity universe." />
+  
+
+<meta name="author" content="Mauritz van den Worm" />
+
+
+<meta name="date" content="2020-10-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="calendar-spreads.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Review: 2020Q3 - A Quant's Perspective</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#links"><i class="fa fa-check"></i><b>1.1</b> Links</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="price-vol.html"><a href="price-vol.html"><i class="fa fa-check"></i><b>2</b> Price and Volatility</a><ul>
+<li class="chapter" data-level="2.1" data-path="price-vol.html"><a href="price-vol.html#price-moves"><i class="fa fa-check"></i><b>2.1</b> Price Moves</a></li>
+<li class="chapter" data-level="2.2" data-path="price-vol.html"><a href="price-vol.html#volatility"><i class="fa fa-check"></i><b>2.2</b> Volatility</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="price-vol.html"><a href="price-vol.html#energies"><i class="fa fa-check"></i><b>2.2.1</b> Energies</a></li>
+<li class="chapter" data-level="2.2.2" data-path="price-vol.html"><a href="price-vol.html#meats"><i class="fa fa-check"></i><b>2.2.2</b> Meats</a></li>
+<li class="chapter" data-level="2.2.3" data-path="price-vol.html"><a href="price-vol.html#grains-and-oilseeds"><i class="fa fa-check"></i><b>2.2.3</b> Grains and Oilseeds</a></li>
+<li class="chapter" data-level="2.2.4" data-path="price-vol.html"><a href="price-vol.html#soft-commodities"><i class="fa fa-check"></i><b>2.2.4</b> Soft Commodities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="price-vol.html"><a href="price-vol.html#sector-aggregates"><i class="fa fa-check"></i><b>2.3</b> Sector Aggregates</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="calendar-spreads.html"><a href="calendar-spreads.html"><i class="fa fa-check"></i><b>3</b> Calendar Spreads</a><ul>
+<li class="chapter" data-level="3.1" data-path="calendar-spreads.html"><a href="calendar-spreads.html#nomenclature-and-example"><i class="fa fa-check"></i><b>3.1</b> Nomenclature and Example</a></li>
+<li class="chapter" data-level="3.2" data-path="calendar-spreads.html"><a href="calendar-spreads.html#calendar-spread-changes"><i class="fa fa-check"></i><b>3.2</b> Calendar Spread Changes</a></li>
+<li class="chapter" data-level="3.3" data-path="price-vol.html"><a href="price-vol.html#sector-aggregates"><i class="fa fa-check"></i><b>3.3</b> Sector Aggregates</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="historical-volatility.html"><a href="historical-volatility.html"><i class="fa fa-check"></i><b>4</b> Historical Volatility</a><ul>
+<li class="chapter" data-level="4.1" data-path="historical-volatility.html"><a href="historical-volatility.html#grains-and-oilseeds-volatility"><i class="fa fa-check"></i><b>4.1</b> Grains and Oilseeds volatility</a></li>
+<li class="chapter" data-level="4.2" data-path="historical-volatility.html"><a href="historical-volatility.html#soft-commodities-volatility"><i class="fa fa-check"></i><b>4.2</b> Soft Commodities volatility</a></li>
+<li class="chapter" data-level="4.3" data-path="historical-volatility.html"><a href="historical-volatility.html#meats-and-livestock-volatility"><i class="fa fa-check"></i><b>4.3</b> Meats and Livestock volatility</a></li>
+<li class="chapter" data-level="4.4" data-path="historical-volatility.html"><a href="historical-volatility.html#energies-volatility"><i class="fa fa-check"></i><b>4.4</b> Energies volatility</a></li>
+<li class="chapter" data-level="4.5" data-path="historical-volatility.html"><a href="historical-volatility.html#precious-metals-volatility"><i class="fa fa-check"></i><b>4.5</b> Precious Metals volatility</a></li>
+<li class="chapter" data-level="4.6" data-path="historical-volatility.html"><a href="historical-volatility.html#industrial-metals-volatility"><i class="fa fa-check"></i><b>4.6</b> Industrial Metals volatility</a></li>
+<li class="chapter" data-level="4.7" data-path="historical-volatility.html"><a href="historical-volatility.html#all-commodities"><i class="fa fa-check"></i><b>4.7</b> All Commodities</a></li>
+<li class="chapter" data-level="4.8" data-path="historical-volatility.html"><a href="historical-volatility.html#polar-star-limited-vs-volatility"><i class="fa fa-check"></i><b>4.8</b> Polar Star Limited vs Volatility</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.polarstarfunds.com/" target="blank">Polar Star Funds</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Commodities in Review 2020 Q3 - A Quant’s Perspective</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="historical-volatility" class="section level1">
+<h1><span class="header-section-number">Section 4</span> Historical Volatility</h1>
+<p>Here we calculate 252 day (1 trading year) rolling volatility across our universe of commodities. We annualise the volatility and define it mathematically as</p>
+<p><span class="math display">\[
+\text{vol} = \sigma( \text{return} ) \times \sqrt{252}
+\]</span>
+where <span class="math inline">\(\sigma\)</span> denotes the standard deviation. Note that this volatility measure is different to the one used in section <a href="price-vol.html#price-vol">2</a>. Here the volatility is measured over a quarter rather than a trading year.</p>
+<p>There is a technical issue when performing the backwards adjustments for the rolled series. Since we are interested in a statistic calculated on the returns we need to choose a roll adjustment measure that preserves returns. Another ways it to keep track of the rolled returns and to construct an ETF price of the rolled series. This can be thought of as the value of $1 invested at the start of the time series.</p>
+<p>Below we show an example of the two data series for South African white maize. The plot on the left shows the ETF price, i.e. value of $1 invested at the start of the time series. The right hand plot shows the roll adjusted price series. Notice that the normal price roll adjusted series can have negative values. This can happen during sustained periods of backwardation. Notice that the occurance of negative prices (values) are not possible in the ETF price case.</p>
+<div class="figure" style="text-align: center"><span id="fig:south-african-white-maize-price-fig"></span>
+<img src="review_files/figure-html/south-african-white-maize-price-fig-1.png" alt="South African White Maize (WZ) ETF and normal roll adjusted price series" width="100%" />
+<p class="caption">
+Figure 4.1: South African White Maize (WZ) ETF and normal roll adjusted price series
+</p>
+</div>
+<p>In the following we study the rolling volatilities of the different commodity sectors.</p>
+<div id="grains-and-oilseeds-volatility" class="section level2">
+<h2><span class="header-section-number">4.1</span> Grains and Oilseeds volatility</h2>
+<p>The plot below shows the rolling volatility of the different commodities in the Grains and Oilseeds sector. For convenience we have removed Chinese commodities since we do not currently trade those. Notice that the majority of the commodities showed decreasing volatility from 2015 up the the most recent data.</p>
+<div class="figure" style="text-align: center"><span id="fig:grians-and-oilseeds-vol-fig"></span>
+<img src="review_files/figure-html/grians-and-oilseeds-vol-fig-1.png" alt="Grains and oilseeds rolling volatility, without Chinese commodities" width="100%" />
+<p class="caption">
+Figure 4.2: Grains and oilseeds rolling volatility, without Chinese commodities
+</p>
+</div>
+<p>The figure below shows that grain and oilseed volatility peaked halfway through 2015. Thereafter volatility collapsed up to July 2018 before start to increase again. The period from March through June 2020 - main corona virus crisis time - is highlighted in blue. Note that volatility is trending upward, but still on the lower side.</p>
+<p><img src="review_files/figure-html/unnamed-chunk-2-1.png" width="960" /></p>
+</div>
+<div id="soft-commodities-volatility" class="section level2">
+<h2><span class="header-section-number">4.2</span> Soft Commodities volatility</h2>
+<p>Most of the soft commodities pictured below show increasing volatilities during 2020.</p>
+<div class="figure" style="text-align: center"><span id="fig:soft-commodities-vol-fig"></span>
+<img src="review_files/figure-html/soft-commodities-vol-fig-1.png" alt="Soft commodities rolling volatility, without Chinese commodities" width="100%" />
+<p class="caption">
+Figure 4.3: Soft commodities rolling volatility, without Chinese commodities
+</p>
+</div>
+<p>Aggregating the volatilities across the soft commodities we can see a general uptrend in the volatilities. The uptrend in volatility during 2020 is also quite interesting in that it coincided with the blunt of the corona virus crisis.</p>
+<p><img src="review_files/figure-html/soft-commodities-vol-evolve-1.png" width="960" /></p>
+</div>
+<div id="meats-and-livestock-volatility" class="section level2">
+<h2><span class="header-section-number">4.3</span> Meats and Livestock volatility</h2>
+<div class="figure" style="text-align: center"><span id="fig:meats-and-livestock-vol-fig"></span>
+<img src="review_files/figure-html/meats-and-livestock-vol-fig-1.png" alt="Meats and Livestock rolling volatility" width="100%" />
+<p class="caption">
+Figure 4.4: Meats and Livestock rolling volatility
+</p>
+</div>
+<p>The effect of the corona virus crisis on the meats and livestock sector is interesting. The large spike in vol coincides with the onset of the virus crisis. In the case of Lean hogs the volatility was already increasing because of outbreaks of African Swine Flue in China where they had to perform severe herd culling. The increased volatility in the meats and livestock will reduce CTA exposure. As the vol normalised the notional exposure, at least for CTAs, will increase.</p>
+<p><img src="review_files/figure-html/meats-and-livestock-vol-evolve-1.png" width="960" /></p>
+</div>
+<div id="energies-volatility" class="section level2">
+<h2><span class="header-section-number">4.4</span> Energies volatility</h2>
+<div class="figure" style="text-align: center"><span id="fig:energies-vol-fig"></span>
+<img src="review_files/figure-html/energies-vol-fig-1.png" alt="Energies rolling volatility" width="100%" />
+<p class="caption">
+Figure 4.5: Energies rolling volatility
+</p>
+</div>
+<p>The spike in energy vol has been well documented in the media and can clearly be seen in the plots above and in the aggregated sector plot below.</p>
+<p><img src="review_files/figure-html/energies-vol-evolve-1.png" width="960" /></p>
+</div>
+<div id="precious-metals-volatility" class="section level2">
+<h2><span class="header-section-number">4.5</span> Precious Metals volatility</h2>
+<div class="figure" style="text-align: center"><span id="fig:precious-metals-vol-fig"></span>
+<img src="review_files/figure-html/precious-metals-vol-fig-1.png" alt="Precious metals rolling volatility" width="100%" />
+<p class="caption">
+Figure 4.6: Precious metals rolling volatility
+</p>
+</div>
+<p>The volatility profiles of the precious metals looks surprisingly like those of the energy sector. This makes sense froma liquidity point of view as these instruments are some of the most widely</p>
+<p><img src="review_files/figure-html/precious-metals-vol-evolve-1.png" width="960" /></p>
+</div>
+<div id="industrial-metals-volatility" class="section level2">
+<h2><span class="header-section-number">4.6</span> Industrial Metals volatility</h2>
+<div class="figure" style="text-align: center"><span id="fig:industrial-metals-vol-fig"></span>
+<img src="review_files/figure-html/industrial-metals-vol-fig-1.png" alt="Industrial metals rolling volatility" width="100%" />
+<p class="caption">
+Figure 4.7: Industrial metals rolling volatility
+</p>
+</div>
+<p>The industrial metals volatility peaked halfway through 2016 and slowly decreased from there, however there has also been an increase in volatility during the corona virus pandemic.</p>
+<p><img src="review_files/figure-html/industrial-metals-vol-evolve-1.png" width="960" /></p>
+</div>
+<div id="all-commodities" class="section level2">
+<h2><span class="header-section-number">4.7</span> All Commodities</h2>
+<p>When we aggregate the volatility over all commodities, except Chinese commodities, we get the plot below. Here we see a general decrease in volatility after the peak midway through 2016. The massive spike in volatility then starts in March 2020. We will most likely see some normalisation in the volatilities over the next months.</p>
+<p><img src="review_files/figure-html/all-commodity-vol-evolve-fig-1.png" width="960" /></p>
+</div>
+<div id="polar-star-limited-vs-volatility" class="section level2">
+<h2><span class="header-section-number">4.8</span> Polar Star Limited vs Volatility</h2>
+<p>The plot below shows the monthly returns of the Polar Star Limited Fund versus the aggregated commodity volatilities. Different dot colours represent different calendar years. We superimpose a linear fit to the data, note the positive slope, implying increasing volatility tends to go along with increasing monthly performance. The fit is not great from a statistics point of view and serves more as a guide to the eye.</p>
+<p><img src="review_files/figure-html/psltd-aggregated-vol-fig-1.png" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="calendar-spreads.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["review.pdf", "review.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

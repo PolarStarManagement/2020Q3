@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Commodities in Review 2020 Q3 - A Quant’s Perspective</title>
+  <meta name="description" content="This is a collection of observations over the third quarter of 2020 in the general commodity universe." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Commodities in Review 2020 Q3 - A Quant’s Perspective" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a collection of observations over the third quarter of 2020 in the general commodity universe." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Commodities in Review 2020 Q3 - A Quant’s Perspective" />
+  
+  <meta name="twitter:description" content="This is a collection of observations over the third quarter of 2020 in the general commodity universe." />
+  
+
+<meta name="author" content="Mauritz van den Worm" />
+
+
+<meta name="date" content="2020-10-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="price-vol.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Review: 2020Q3 - A Quant's Perspective</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#links"><i class="fa fa-check"></i><b>1.1</b> Links</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="price-vol.html"><a href="price-vol.html"><i class="fa fa-check"></i><b>2</b> Price and Volatility</a><ul>
+<li class="chapter" data-level="2.1" data-path="price-vol.html"><a href="price-vol.html#price-moves"><i class="fa fa-check"></i><b>2.1</b> Price Moves</a></li>
+<li class="chapter" data-level="2.2" data-path="price-vol.html"><a href="price-vol.html#volatility"><i class="fa fa-check"></i><b>2.2</b> Volatility</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="price-vol.html"><a href="price-vol.html#energies"><i class="fa fa-check"></i><b>2.2.1</b> Energies</a></li>
+<li class="chapter" data-level="2.2.2" data-path="price-vol.html"><a href="price-vol.html#meats"><i class="fa fa-check"></i><b>2.2.2</b> Meats</a></li>
+<li class="chapter" data-level="2.2.3" data-path="price-vol.html"><a href="price-vol.html#grains-and-oilseeds"><i class="fa fa-check"></i><b>2.2.3</b> Grains and Oilseeds</a></li>
+<li class="chapter" data-level="2.2.4" data-path="price-vol.html"><a href="price-vol.html#soft-commodities"><i class="fa fa-check"></i><b>2.2.4</b> Soft Commodities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="price-vol.html"><a href="price-vol.html#sector-aggregates"><i class="fa fa-check"></i><b>2.3</b> Sector Aggregates</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="calendar-spreads.html"><a href="calendar-spreads.html"><i class="fa fa-check"></i><b>3</b> Calendar Spreads</a><ul>
+<li class="chapter" data-level="3.1" data-path="calendar-spreads.html"><a href="calendar-spreads.html#nomenclature-and-example"><i class="fa fa-check"></i><b>3.1</b> Nomenclature and Example</a></li>
+<li class="chapter" data-level="3.2" data-path="calendar-spreads.html"><a href="calendar-spreads.html#calendar-spread-changes"><i class="fa fa-check"></i><b>3.2</b> Calendar Spread Changes</a></li>
+<li class="chapter" data-level="3.3" data-path="price-vol.html"><a href="price-vol.html#sector-aggregates"><i class="fa fa-check"></i><b>3.3</b> Sector Aggregates</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="historical-volatility.html"><a href="historical-volatility.html"><i class="fa fa-check"></i><b>4</b> Historical Volatility</a><ul>
+<li class="chapter" data-level="4.1" data-path="historical-volatility.html"><a href="historical-volatility.html#grains-and-oilseeds-volatility"><i class="fa fa-check"></i><b>4.1</b> Grains and Oilseeds volatility</a></li>
+<li class="chapter" data-level="4.2" data-path="historical-volatility.html"><a href="historical-volatility.html#soft-commodities-volatility"><i class="fa fa-check"></i><b>4.2</b> Soft Commodities volatility</a></li>
+<li class="chapter" data-level="4.3" data-path="historical-volatility.html"><a href="historical-volatility.html#meats-and-livestock-volatility"><i class="fa fa-check"></i><b>4.3</b> Meats and Livestock volatility</a></li>
+<li class="chapter" data-level="4.4" data-path="historical-volatility.html"><a href="historical-volatility.html#energies-volatility"><i class="fa fa-check"></i><b>4.4</b> Energies volatility</a></li>
+<li class="chapter" data-level="4.5" data-path="historical-volatility.html"><a href="historical-volatility.html#precious-metals-volatility"><i class="fa fa-check"></i><b>4.5</b> Precious Metals volatility</a></li>
+<li class="chapter" data-level="4.6" data-path="historical-volatility.html"><a href="historical-volatility.html#industrial-metals-volatility"><i class="fa fa-check"></i><b>4.6</b> Industrial Metals volatility</a></li>
+<li class="chapter" data-level="4.7" data-path="historical-volatility.html"><a href="historical-volatility.html#all-commodities"><i class="fa fa-check"></i><b>4.7</b> All Commodities</a></li>
+<li class="chapter" data-level="4.8" data-path="historical-volatility.html"><a href="historical-volatility.html#polar-star-limited-vs-volatility"><i class="fa fa-check"></i><b>4.8</b> Polar Star Limited vs Volatility</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.polarstarfunds.com/" target="blank">Polar Star Funds</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Commodities in Review 2020 Q3 - A Quant’s Perspective</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Commodities in Review 2020 Q3 - A Quant’s Perspective</h1>
+<p class="author"><em>Mauritz van den Worm</em></p>
+<p class="date"><em>2020-10-14</em></p>
+</div>
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">Section 1</span> Introduction</h1>
+<p>This write-up looks at the third quarter of 2020 from a quant’s perspective. In section <a href="price-vol.html#price-vol">2</a> we study the change in price and volatility of specific commodities and sector aggregates. Section <a href="calendar-spreads.html#calendar-spreads">3</a> shows a similar analysis performed on a collection of calendar spreads.</p>
+<div id="links" class="section level2">
+<h2><span class="header-section-number">1.1</span> Links</h2>
+<ul>
+<li><a href="https://polarstarmanagement.github.io/Quant-Risk-Report/" target="_blank">Polar Star Quantitative Commodity Fund Risk Report</a></li>
+<li><a href="https://polarstarmanagement.github.io/2020Q2/" target="_blank">Review: 2020Q2 - A Quant’s Perspective</a></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="price-vol.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["review.pdf", "review.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
